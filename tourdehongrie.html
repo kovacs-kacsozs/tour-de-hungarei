@@ -8,8 +8,9 @@
   <script src="popper.min.js"></script>
   <script src="bootstrap.min.js"></script>  
   <link rel="stylesheet" href="tdh.css">
-  <link rel="stylesheet" href="tdh.js"
+  <link rel="stylesheet" href="tdh.js">
   <title>Tour de Hongrie</title>
+  
 </head>
 
 <body>
@@ -38,7 +39,7 @@
     <div class="col-lg-4 col-xl-3">
       <img src="kepek/1962.jpg" class="kiskep" alt="A leghosszabb verseny útvonala" title="A leghosszabb verseny útvonala">
       <p class="kepfelirat">A leghosszabb Tour de Hongrie: 1393 kilométer...</p>
-      <img src="cel1964.jpg" alt="Befutó 1964-ben" class="kiskep" title="Befutó 1964-ben">
+      <img src="kepek/cel1964.jpg" alt="Befutó 1964-ben" class="kiskep" title="Befutó 1964-ben">
       <p class="kepfelirat">Befutó 1964-ben</p>
     </div>
   </div>
@@ -95,20 +96,20 @@
     </div>    
   </div>
 
-  <h2 class="display-5" id="sikereink">Magyar sikerek</h2> 
+  <h2 class="display-4" id="sikereink">Magyar sikerek</h2> 
   <div class="row">  
-    <div class="col-lg-5">
+    <div class="col-lg-4">
       <p>A körverseny több mint kilenc évtizedes története során a hazai kerékpárosok szerezték meg a legtöbb győzelmet, tizenkilenc alkalommal nyert magyar versenyző az összetettben. Négyszer osztrák, háromszor szlovák, kétszer német, olasz, illetve ukrán kerekes vitte haza a fődíjat, egy-egy alkalommal győzött Oroszország, Ukrajna, Svájc, Franciaország, Hollandia, Jugoszlávia, Luxemburg, Észtország,  Kolumbia vagy Lettország versenyzője.</p>
     </div>
-    <div class="col-lg-2">
+    <div class="col-lg-4">
       <img src="kepek/cimvedo2020.jpg" class="kiskep" alt="Valter Attila címvédő" title="Valter Attila címvédő">
       <p class="kepfelirat">2020-as győztes: Valter Attila</p>
     </div>
     <div class="col-lg-5">
-      <h3>Időszalag</h3>
+      <h3 class="helyezes">Időszalag</h3>
       <form>
         <p>A versenysorozat dobogósai:</p>
-        <input type="range" class="form-control-range" id="verseny" value="41">
+       <input type="range" class="form-control-range" id="verseny" value="1" min="1" max="41" oninput="frissit()">
         <strong><span id="sorszam">41</span>. Tour de Hongrie győztesei:</strong>
         <ol>
           <li><p id="hely1"><strong>Valter Attila (HUN)<br>18:45:55</strong></p></li>
