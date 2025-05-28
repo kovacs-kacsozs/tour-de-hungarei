@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="tdh.css">
   <script src="jquery.min.js"></script>
   <script src="popper.min.js"></script>
-  <script src="bootstrap.min.js"></script>  
-  <link rel="stylesheet" href="tdh.css">
-  <link rel="stylesheet" href="tdh.js">
-  <title>Tour de Hongrie</title>
-  
+  <script src="bootstrap.min.js"></script>
+  <script src="tdh.js"></script>
+  <title>Tour de Hongrie</title>  
 </head>
 
 <body>
@@ -20,7 +19,7 @@
       <a class="nav-link" href="#tortenet">A verseny története</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#ev2020">2020 Tour de Hongrie</a>
+      <a class="nav-link" href="#ev2020">2020. Tour de Hongrie</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#sikereink">Magyar sikerek</a>
@@ -39,13 +38,12 @@
     <div class="col-lg-4 col-xl-3">
       <img src="kepek/1962.jpg" class="kiskep" alt="A leghosszabb verseny útvonala" title="A leghosszabb verseny útvonala">
       <p class="kepfelirat">A leghosszabb Tour de Hongrie: 1393 kilométer...</p>
-      <img src="kepek/cel1964.jpg" alt="Befutó 1964-ben" class="kiskep" title="Befutó 1964-ben">
-      <p class="kepfelirat">Befutó 1964-ben</p>
+      <img src="kepek/cel1964.jpg" alt="Befutó 1964-ben" title="Befutó 1964-ben" class="kiskep">
+      <p class="kepfelirat">Célfotó az 1964-es versenyen</p>
     </div>
   </div>
   
   <h2 class="display-5" id="ev2020">41. Tour de Hongrie</h2>
-  <h3>média</h3>
   <div class="row">  
     <div class="col-lg-7 col-xl-8">
       <h3>Szervezés</h3>
@@ -55,7 +53,7 @@
       <h3>Média</h3>
       <p>A Tour de Hongrie történetében ötödik alkalommal követhetik majd a nézők élő televíziós közvetítésen keresztül az eseményeket.</p>
       <p>A versenysorozat <a href="https://www.youtube.com/channel/UCLsCl72oY5PFU5-xiDWZCog" target="_blank">YouTube csatornáján</a> évekre visszamenőleg számos videó megtekinthető az érdeklődők és a nosztalgiára vágyók számára.</p>
-      <h3>Társadalmi szerepvállalás</h3> 
+      <h3>Társadalmi szerepvállalás</h3>
       <p>A Tour de Hongrie – ahogyan az elmúlt években is – továbbra is vállalja, hogy fontos ügyek mellé áll. 2020-ban is a közlekedésbiztonság fontosságára igyekszünk felhívni a figyelmet. Szívügyünk a biztonságos közlekedés, különösen a biztonságos kerékpáros közlekedés népszerűsítése, ennek érdekében az elmúlt évek során is igyekeztünk sokat tenni. A kék szívecskés logóval gyakran találkozhatnak a 2020-as Tour de Hongrie során. A Magyar Kerékpáros Körverseny főszervezője, a Vuelta Sportiroda fontosnak tartja, hogy a nemzetközi sporteseményt övező megkülönböztetett figyelmet a társadalmi szerepvállalásban fontos ügyek felé is fordítsa.</p>      
     </div>    
     <div class="col-lg-5 col-xl-4">
@@ -96,7 +94,7 @@
     </div>    
   </div>
 
-  <h2 class="display-4" id="sikereink">Magyar sikerek</h2> 
+  <h2 class="display-5" id="sikereink">Magyar sikerek</h2> 
   <div class="row">  
     <div class="col-lg-4">
       <p>A körverseny több mint kilenc évtizedes története során a hazai kerékpárosok szerezték meg a legtöbb győzelmet, tizenkilenc alkalommal nyert magyar versenyző az összetettben. Négyszer osztrák, háromszor szlovák, kétszer német, olasz, illetve ukrán kerekes vitte haza a fődíjat, egy-egy alkalommal győzött Oroszország, Ukrajna, Svájc, Franciaország, Hollandia, Jugoszlávia, Luxemburg, Észtország,  Kolumbia vagy Lettország versenyzője.</p>
@@ -105,13 +103,13 @@
       <img src="kepek/cimvedo2020.jpg" class="kiskep" alt="Valter Attila címvédő" title="Valter Attila címvédő">
       <p class="kepfelirat">2020-as győztes: Valter Attila</p>
     </div>
-    <div class="col-lg-5">
-      <h3 class="helyezes">Időszalag</h3>
+    <div class="col-lg-4">
+      <h3>Időszalag</h3>
       <form>
         <p>A versenysorozat dobogósai:</p>
-       <input type="range" class="form-control-range" id="verseny" value="1" min="1" max="41" oninput="frissit()">
+        <input type="range" class="form-control-range" id="verseny" value="1" value="41" oninput="frissit()">
         <strong><span id="sorszam">41</span>. Tour de Hongrie győztesei:</strong>
-        <ol>
+        <ol class="helyezes">
           <li><p id="hely1"><strong>Valter Attila (HUN)<br>18:45:55</strong></p></li>
           <li><p id="hely2">Simmons Quinn (USA)<br>+12 mp</p></li>
           <li><p id="hely3">Howson Damien (AUS)<br>+16 mp</p></li>          
